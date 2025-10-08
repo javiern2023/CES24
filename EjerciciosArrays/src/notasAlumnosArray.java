@@ -39,10 +39,11 @@ public class notasAlumnosArray {
 					break;
 				case 1: System.out.println("Dime el dni del alumn@");
 						dni=sc.nextLine();
-						System.out.println("Dime la nota del alumn@");
-						nota=sc.nextDouble();
+						
 						for(int i=0;i<arrayDni.length;i++) {
 							if(arrayDni[i]!=null && arrayDni[i].equals(dni)) {
+								System.out.println("Dime la nota del alumn@");
+								nota=sc.nextDouble();
 								arrayNotas[i]=nota;
 								break;
 							}
