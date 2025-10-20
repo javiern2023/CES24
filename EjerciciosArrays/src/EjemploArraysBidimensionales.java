@@ -12,17 +12,19 @@ public class EjemploArraysBidimensionales {
 		System.out.println("Filas "+array.length);
 		System.out.println("Columnas "+array[0].length);
 		
-		//array [0][0] ="025";
-		System.out.println("El dni es: "+array[0][0]);
+		/*array [3][5] ="025";
+		System.out.println("El dni es: "+array[3][5]);*/
 		
 		//bucle que recorre las filas
 		for(int i=0;i<array.length;i++) {
+			//bucle recorre las columnas dentro de una fila
 			for(int j=0;j<array[i].length;j++) {
 				System.out.print("Dime el dni de la fila "+i+" y columna "+j+" :");
 				array [i][j] = sc.next();
 			}
 			
 		}
+		
 		
 		for(int i=0;i<array.length;i++) {
 			for(int j=0;j<array[i].length;j++) {

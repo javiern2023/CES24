@@ -9,7 +9,7 @@ public class notasAlumnosArray {
 		double arrayNotas [], nota;
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("¿Cuántos alumnos tienes: ");
+		System.out.print("¿Cuántos alumnos tienes? ");
 		cantidadAlumnos=sc.nextInt();
 		
 		arrayDni = new String [cantidadAlumnos];
@@ -28,6 +28,7 @@ public class notasAlumnosArray {
 			
 			switch(opcion) {
 				case 0: System.out.println("Dime el dni del alumn@");
+						sc.next();
 						dni=sc.nextLine();
 						for(int i=0;i<arrayDni.length;i++) {
 							if(arrayDni[i]==null) {
